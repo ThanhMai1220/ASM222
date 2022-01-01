@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <title>Sign Up Page</title>
+    <style>
+        .brand_logo{
+            margin-top: 70px;
+        }
+        .btn{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="d-flex justify-content-center ">
+			<img src="images\logo2.jpg" class="brand_logo" alt="Logo">
+		</div>
+
+        <div class="d-flex justify-content-center form_container">
+            <form action="/home" method="post">
+                <div class="input-group mb-3" >
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                    </div>
+                        <input type="text" class="form-control" placeholder="Username"  name="name" id="name">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Password"  name="password">
+                </div>
+	            <button type="submit" class="btn btn-secondary"> <a href="/home" style="color: white;" > Sign Up</a></button>
+                <span class="error">{{passError}}</span>
+            </form>
+        </div>   
+	</div>
+</body>
+</html>
