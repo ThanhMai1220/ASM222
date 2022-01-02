@@ -80,15 +80,6 @@ app.post('/product',async (req,res)=>{
     res.redirect('product')
 })
 
-// app.get('/delete', async(req,res)=>{
-//     const id = req.query.id;
-    
-//     const condition = await dbHandler.find(id);
-    
-//     await dbHandler.deleteProduct("Product", condition);
-//     let results = await dbHandler.searchProduct("","Product");
-//     res.render('product',{product:results});
-// })
 app.get('/delete',async (req,res)=>{
     const id = req.query.id
     console.log("id can xoa:" + id)
